@@ -1,0 +1,11 @@
+{
+  "name": "pdemo",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "http-server -p 9205 -c-1",
+    "start": "npm run serve"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

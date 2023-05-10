@@ -165,3 +165,9 @@ External/[Nn]uget.exe
 # VS 15 junk
 v15/
 *.v2
+
+# Node modules
+node_modules
+
+# Intellij
+.idea
