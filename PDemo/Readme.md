@@ -1,5 +1,12 @@
 # PDemo
 
+## Tebra
+This project has been forked to work with SmileCDR.  You can run it with node js:
+
+npm install
+
+npm start
+
 *[FHIR](http://www.hl7.org/implement/standards/fhir/)-based Patients' DEMOgraphics*
 
 Simple HTML+JavaScript single page application that query patients' demographics information from a FHIR server.
