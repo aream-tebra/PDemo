@@ -1,6 +1,6 @@
-/* 
+/*
  * Copyright (c) 2015 - 2017, CareEvolution Inc (info@careevolution.com)
- * 
+ *
  * This file is licensed under the MIT License - see License.txt
  */
 
@@ -196,7 +196,7 @@
                         redirectParameters = appendParameter(redirectParameters, "client_id", PDemoConfiguration.clientID);
                         redirectParameters = appendParameter(redirectParameters, "redirect_uri", getRedirectUrl());
                         redirectParameters = appendParameter(redirectParameters, "aud", fhirUrl);
-                        redirectParameters = appendParameter(redirectParameters, "scope", "user/*.read");
+                        redirectParameters = appendParameter(redirectParameters, "scope", "patient/*.read");
                         mode = MODE_CODE;
                         sessionStorage[SESSION_FHIR_URL] = fhirUrl;
                         sessionStorage[SESSION_MODE] = mode;
@@ -1324,7 +1324,7 @@
         }
 
         function joinNames(names) {
-            return !names ? null : joinNonEmpty(" ", names.map(firstUppercase));
+            return !names ? null : (!Array.isArray(names) ? names : joinNonEmpty(" ", names.map(firstUppercase)));
         }
 
         function getRaceDisplayName(patient) {
